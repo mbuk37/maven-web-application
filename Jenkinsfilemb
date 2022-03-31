@@ -3,6 +3,8 @@ node{
     echo "the node name is: ${env.NODE_NAME} "
     echo "the job name is: ${env.JOB_NAME} "
     
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+    
 //checkoutstage
 stage( 'checkoutcode' ){
 git branch: 'development', credentialsId: 'e1575017-54ea-4525-a794-f19b59088253', url: 'https://github.com/mbuk37/maven-web-application.git'
