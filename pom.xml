@@ -96,11 +96,11 @@
 	
 	<distributionManagement>
 	
-	    <repository>
+	    <releaserepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
 	      <url>http://13.233.153.175:9980/nexusserver/repository/facebook-releases/</url>
-	    </repository>
+	    </releaserepository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
